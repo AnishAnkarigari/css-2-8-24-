@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(12,1fr);
+            gap:10px;
+            width: 700px;
+            height: 00px;
+        border: 0px solid;
+        background-color: black;
+        }
+        .container > div {
+            
+    
+        }
+        .item1{
+            grid-row: 1/13;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGK3diR3Zi-mnOXEaj-3ewmFyRYVxGzVzZw&s");
+        width:100px;
+        background-size: contain;
+        color:rgb(61, 113, 157);
+        font-size:20px;
+
+        }
+        .item2{
+            grid-row: 1/7;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&s");
+            width: 100px;
+            background-size:contain;
+            height: 320px;
+            color: blue;
+            font-size:20px;
+        }
+        .item7{
+            grid-row: 7/13;
+            height:350px;
+            background-image: url("https://wallpapers.com/images/featured/image-pictures-79gc4p3mqu7an848.jpg");
+            width:100px;
+            background-size: contain;
+            color: rgb(20, 19, 19);
+        
+            font-size: 20px
+        }
+        .item3{
+            grid-row: 1/5;
+             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfLItpbIZiYo8XX2z_bHrjoIhplceoJGVnaw&s");
+            width: 100px;
+            background-size:contain;
+            height: 200px;
+            color: rgb(19, 19, 19);
+            font-size:20px;
+        }
+        .item8{
+            grid-row: 5/9;
+             background-image: url(" https://cdn.britannica.com/71/149571-050-C33E9F0F/Brown-bear-Finland.jpg?w=920&h=518&c=crop");
+            width: 100px;
+            background-size:contain;
+            height: 220px;
+            color: rgb(19, 19, 19);
+            font-size:20px;
+        }
+        .item9{
+            grid-row: 9/13;
+             background-image: url("https://media.newyorker.com/photos/62c4511e47222e61f46c2daa/4:3/w_2663,h_1997,c_limit/shouts-animals-watch-baby-hemingway.jpg");
+             width: 100px;
+             background-size: contain;
+             height: 230px;
+             color: rgb(222, 231, 228);
+             font-size: 20px
+        }
+        .item4{
+            grid-row: 1/4;
+            background-image: url("https://cdn.britannica.com/30/150930-120-D3D93F1E/lion-Namibia.jpg");
+            width: 100px;
+            background-size: contain;
+            color: rgb(20, 19, 19);
+            height:150px ;
+            font-size: 20px
+        }
+        .item10{
+            grid-row: 4/7;
+    background-image: url("https://cdn.pixabay.com/photo/2023/11/29/21/05/animal-8420313_640.jpg ");
+    width: 100px;
+             background-size: contain;
+             height: 150px;
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+        }
+        .item11{
+            grid-row: 7/10;
+             background-image: url(" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpz6-_dGtrY6kDdHfCsBb6K6uokCkXmp4YoA&s");
+             width: 100px;
+             background-size: contain;
+             height: 180px;
+             color: rgb(222, 231, 228);
+             font-size: 20px;
+            
+        }
+        .item12{
+            grid-row: 10/13;
+        
+             background-image: url(" https://lazoo.org/wp-content/uploads/2023/06/Magnificent-Tree-Frog-JEP_2210.jpg");
+             width: 100px;
+             background-size: contain;
+             height: 170px;
+             color: rgb(222, 231, 228);
+             font-size: 20px;
+
+        }
+        .item5{
+            grid-row: 1/3;
+             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKf6AIxapOMdJYTcj1FSWE5-UPSm99lxns5w&s");
+             width: 100px;
+             background-size: contain;
+             height: 100px;
+             color: rgb(222, 231, 228);
+             font-size: 20px;
+        }
+        .item13{
+            grid-row: 3/5;
+    background-image: url(" https://aldf.org/wp-content/uploads/2018/05/lamb-iStock-665494268-16x9-e1559777676675.jpg");
+    width: 100px;
+             background-size: contain;
+             height: 100px;
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+             
+        }
+        .item14{
+            grid-row: 5/7;
+    background-image: url(  " https://keralakaumudi.com/web-news/en/2023/05/NMAN0413506/image/tiger.1.559435.jpg");
+    width: 100px;
+             background-size: contain;
+              
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+           
+        }
+        .item15{
+            grid-row: 7/9;
+             
+    background-image: url(" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy0fvk3m8rtAQXbxsssAa29crsFcSBk2T18Q&s");
+    width: 100px;
+             background-size: contain;
+            
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+        }
+        .item16{
+            grid-row: 9/11;
+            
+    background-image: url(" https://static.theprint.in/wp-content/uploads/2019/11/dhole.jpg");
+    width: 100px;
+             background-size: contain;
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+             
+            
+        }
+        .item17{
+            grid-row: 11/13;
+             
+    background-image: url("https://img.freepik.com/free-photo/pink-flamingo-with-blue-background-word-flamingo-it_1340-25881.jpg?size=626&ext=jpg");
+    width: 100px;
+             background-size: contain;
+              
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+        }
+        .item6{
+            grid-row: 1/2;
+           
+    background-image: url("https://pixlr.com/images/generator/how-to-generate.webp");
+    width: 100px;
+             background-size: contain;
+             height: 50pxpx;
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+        }
+        .item18{
+            grid-row: 2/3;
+         
+    background-image: url("https://d2r55xnwy6nx47.cloudfront.net/uploads/2024/04/AnimalConsciousness-crTranTheNgoc_Shutterstock-Lede-scaled.webp");
+    width: 100px;
+             background-size: contain;
+              
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+
+        }
+        .item19{
+            grid-row: 3/4;
+           
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9-w-ZL3fct4OMa15AI4ajBrL40SC3q-37Ww&s");
+    width: 100px;
+             background-size: contain;
+             
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+
+        }
+        .item20{
+            grid-row: 4/5;
+             
+    background-image: url(" https://d1jyxxz9imt9yb.cloudfront.net/medialib/4484/image/s768x1300/iStock-500803230_457165_reduced.jpg");
+    width: 100px;
+             background-size: contain;
+            
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+ }
+ .item21{
+    grid-row: 5/6;
+     
+    background-image: url(" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTph0-_GNJHmTpMFDQOi1-C2Vk0LSx_C8nXsA&s");
+    width: 100px;
+             background-size: contain;
+            
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+ }
+ .item22{
+    grid-row: 6/7;
+     
+    background-image: url(" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoTFGnkHJ01P0KXhjdRAK9P8x2hBaXOMb2w&s");
+    width: 100px;
+             background-size: contain;
+            
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+ }
+ .item23{
+    grid-row: 7/8;
+    
+    background-image: url(" https://images.saymedia-content.com/.image/t_share/MTc0MzIwMjM1MTk1NjcxOTEy/top-ten-cutest-japanese-wild-animals.jpg");
+    width: 100px;
+             background-size: contain;
+             
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+ }
+ .item24{
+    grid-row: 8/9;
+    
+    background-image: url(" https://i.pinimg.com/originals/19/0b/f0/190bf0322ab595957aa025aba8fc1ced.jpg");
+    width: 100px;
+             background-size: contain;
+             height: 50pxpx;
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+            }
+.item25{
+    grid-row: 9/10;
+    
+    background-image: url(" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHtUdi1vpoqRBBgEr4pFBFbYvuemUqNIpAQ&s");
+    width: 100px;
+             background-size: contain;
+             height: 50pxpx;
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+}
+.item26{
+    grid-row: 10/11;
+    background-image: url(" https://www.timeforkids.com/wp-content/uploads/2024/02/Snapshot_202803083.jpg?w=1024");
+    width: 100px;
+             background-size: contain;
+             height: 50 px;
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+}
+.item27{
+    grid-row: 11/12;
+
+    background-image: url("https://cms.bbcearth.com/sites/default/files/2021-03/sloth.png");
+    width: 100px;
+             background-size: contain;
+            
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+}
+.item28{
+    grid-row: 12/13;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Dkmfe28_vtGwPsh8erXyIV0K5BEhuxLJAA&s");
+    width: 100px;
+             background-size: contain;
+             height: 50px;
+             color:white;
+             font-size: 20px;
+             background-size: contain;
+             font-size: 15px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="item1">1</div>
+       <div class="item2">2</div>
+       <div class="item7">3</div>
+       <div class="item3">4</div>
+       <div class="item8">5</div>
+       <div class="item9">6</div>
+       <div class="item4">7</div>
+       <div class="item10">8</div>
+       <div class="item11">9</div>
+       <div class="item12">10</div>
+       <div class="item5">11</div>
+       <div class="item13">12</div>
+       <div class="item14">13</div>
+       <div class="item15">14</div>
+       <div class="item16">15</div>
+       <div class="item17">16</div>
+       <div class="item6">17</div>
+       <div class="item18">18</div>
+       <div class="item19">19</div>
+       <div class="item20">20</div>
+       <div class="item21">21</div>
+       <div class="item22">22</div>
+       <div class="item23">23</div>
+       <div class="item24">24</div>
+       <div class="item25">25</div>
+       <div class="item26">26</div>
+       <div class="item27">27</div>
+       <div class="item28">28</div>
+    </div>
+</body>
+</html>
